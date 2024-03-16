@@ -53,7 +53,7 @@ const Auth = () => {
         <img src={Logo} alt="" />
         <div className="Webname">
           <h1 style={{color:"white"}}>Athlete Connect</h1>
-          <h6>Explore and Connect to the world of Athlete.</h6>
+          <h6 style={{color:"white"}}>Explore and Connect to the world of Athlete.</h6>
         </div>
       </div>
 

@@ -6,6 +6,7 @@ const FollowersModal = ({ modalOpened, setModalOpened }) => {
   const theme = useMantineTheme();
   return (
     <Modal
+      style={{ height: "100%" }} // Set the height to 100%
       overlayColor={
         theme.colorScheme === "dark"
           ? theme.colors.dark[9]
@@ -17,8 +18,7 @@ const FollowersModal = ({ modalOpened, setModalOpened }) => {
       opened={modalOpened}
       onClose={() => setModalOpened(false)}
     >
-
-    <FollowersCard location='modal'/>
+      <FollowersCard location='modal'/>
     </Modal>
   );
 };

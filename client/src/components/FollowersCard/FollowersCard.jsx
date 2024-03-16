@@ -18,7 +18,7 @@ const FollowersCard = ({ location }) => {
   }, []);
 
   return (
-    <div className="FollowersCard">
+    <div className="FollowersCard"  >
       <h3>People you may know</h3>
 
       {persons.map((person, id) => {
@@ -30,7 +30,7 @@ const FollowersCard = ({ location }) => {
         ""
       )}
 
-      <FollowersModal
+      <FollowersModal 
         modalOpened={modalOpened}
         setModalOpened={setModalOpened}
       />
