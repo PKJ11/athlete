@@ -33,6 +33,7 @@ const Post = ({ data }) => {
 
     fetchUserData();
   }, [data.userId]);
+  console.log(data.userId);
 
   const handleLike = () => {
     likePost(data._id, user._id);
