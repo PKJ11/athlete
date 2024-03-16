@@ -21,47 +21,7 @@ const Chat = () => {
   const [sendMessage, setSendMessage] = useState(null);
   const [receivedMessage, setReceivedMessage] = useState(null);
 
-  // const createChatsWithFollowersAndFollowing = async () => {
-  //   try {
-  //     const followers = user.followers;
-  //     const following = user.following;
-  //     const processedIds = new Set(); // Set to store processed IDs
   
-  //     // Iterate over followers
-  //     for (const followerId of followers) {
-  //       if (!processedIds.has(followerId)) { // Check if ID is not processed already
-  //         const chatData = {
-  //           senderId: user._id,
-  //           receiverId: followerId
-  //         };
-  //         await axios.post('http://localhost:5000/chat/', chatData);
-  //         processedIds.add(followerId); // Add the processed ID to the Set
-  //       }
-  //     }
-  
-  //     // Iterate over following
-  //     for (const followingId of following) {
-  //       if (!processedIds.has(followingId)) { // Check if ID is not processed already
-  //         const chatData = {
-  //           senderId: user._id,
-  //           receiverId: followingId
-  //         };
-  //         await axios.post('http://localhost:5000/chat/', chatData);
-  //         processedIds.add(followingId); // Add the processed ID to the Set
-  //       }
-  //     }
-  //   } catch (error) {
-  //     console.error('Error creating chats:', error);
-  //   }
-  
-  // };
-
-  useEffect(() => {
-    // Call the function to create chats with followers and following when user changes
-    if (user) {
-      // createChatsWithFollowersAndFollowing();
-    }
-  }, [user]);
 
   // Get the chat in chat section
   useEffect(() => {
