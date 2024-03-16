@@ -100,7 +100,7 @@ const ProfileModal = ({ modalOpened, setModalOpened, data }) => {
             value={formData.worksAt}
             onChange={handleChange}
             type="text"
-            placeholder="About You"
+            placeholder="Works at"
             name="worksAt"
             className="infoInput"
           />
